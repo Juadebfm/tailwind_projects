@@ -12,12 +12,14 @@ export default {
         byway_light_gray: "#F8FAFC",
         byway_heading: "#0F172A",
         byway_disabled: "#94A3B8",
+        byway_orange: "#EAB308",
       },
       boxShadow: {
         byway_box_shadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
       },
       screens: {
-        ipad_fix: "1600px",
+        next_hub: " 1280px",
+        xtraLargeScreens: "1900px",
       },
       animation: {
         fadeIn: "fadeIn 0.5s ease-in-out",
