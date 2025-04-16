@@ -4,10 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Header 3</title>
   </head>
-  <body class="flex items-center justify-center h-screen">
-    <h1 class="text-4xl text-[100px] text-blue-500 font-bold underline">
-      Hello world!
-    </h1>
+  <body class="px-[35px] md:px-[3.8rem] lg:px-[6rem] py-[3.5rem] font-sans">
+    <!-- Header Section -->
+    <header>
+      <nav class="flex items-center justify-between">
+        <!-- Left Side -->
+        <div class="flex items-center justify-between gap-10">
+          <span>Startup 3</span>
+          <ul class="hidden lg:flex items-center justify-between gap-10">
+            <li>
+              <a href="#">
+                <span>Products</span> <i class="bx bx-chevron-down"></i>
+              </a>
+            </li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <!-- Right Side -->
+        <div>
+          <ul class="hidden lg:flex items-center justify-between gap-10">
+            <li><a href="#">API</a></li>
+            <li><a href="#">Help</a></li>
+            <button>Login</button>
+            <button>Signup</button>
+          </ul>
+        </div>
+
+        <div class="block lg:hidden">
+          <i class="bx bx-menu text-[35px] cursor-pointer"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Section -->
+    <main class="mt-10 lg:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-[3rem]">
+      <section>
+        <h1
+          class="text-[30px] lg:text-[42px] font-bold text-center lg:text-start leading-[52px] text-[#1E0E62]"
+        >
+          A high-quality solution for those who want a beautiful startup website
+          quickly
+        </h1>
+
+        <form
+          class="mt-12 flex flex-col items-start justify-center w-full lg:w-[80%] space-y-7"
+        >
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full h-[60px] bg-transparent border border-slate-500 active:bg-transparent focus:bg-transparent px-5 text-base rounded-full"
+          />
+          <input
+            type="password"
+            placeholder="Your Password"
+            class="w-full h-[60px] bg-transparent border border-slate-500 active:bg-transparent focus:bg-transparent px-5 text-base rounded-full"
+          />
+
+          <div
+            class="flex items-center flex-col justify-center w-full space-y-3"
+          >
+            <button
+              class="w-full bg-[#25DAC5] h-[60px] text-[17px] font-medium text-white rounded-full"
+            >
+              Sign In
+            </button>
+            <small class="text-[#1E0E62]/40"
+              >By signing up, you agree to the Terms of Service</small
+            >
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <div class="px-0 lg:px-5">
+          <img src="../images/plhd.png" alt="Video Player" />
+        </div>
+        <p
+          class="text-[18px] font-medium text-gray-500/70 w-full lg:w-[65%] mt-5 px-5"
+        >
+          We made it so beautiful and simple. It combines landings, pages, blogs
+          and shop screens. It is definitely the tool you need in your
+          collection!
+        </p>
+      </section>
+    </main>
   </body>
 </html>
